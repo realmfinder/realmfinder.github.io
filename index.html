@@ -4,16 +4,22 @@
    <head>
 
         <title>ROTMG realm finder</title>
-        <h1>Rotmg realm finder</h1>
+        <h1>Rotmg realm finder</h1><br>
 
    </head>	
 
    <body>
 
         <label for="rems">Maximum remaining heroes?</label>
-        <input type="text", id="rems", name="rems"><br>
+        <input type="text", id="max-rems", name="max-rems"><br>
         <label for="rems">Maximum players?</label>
-        <input type="text", id="players", name="players"><br>
+        <input type="text", id="max-players", name="max-players"><br><br>
+
+        <label for="rems">Minimum remaining heroes?</label>
+        <input type="text", id="min-rems", name="min-rems", value="1"><br>
+        <label for="rems">Minimum players?</label>
+        <input type="text", id="min-players", name="min-players", value="1"><br><br>
+
         <button type="button" id="submit">Find realms</button>
 
         <script src="index.js"></script>
