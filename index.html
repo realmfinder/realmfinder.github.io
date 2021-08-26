@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-   <head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>ROTMG realm finder</title>
-        <h1>Rotmg realm finder</h1><br>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
 
-   </head>	
+        <title>Document</title>
 
-   <body>
+        <h1 class="title">Realm Finder</h1>
 
-        <label for="rems">Maximum remaining heroes?</label>
-        <input type="text", id="max-rems", name="max-rems"><br>
-        <label for="rems">Maximum players?</label>
-        <input type="text", id="max-players", name="max-players"><br><br>
+    </head>
 
-        <label for="rems">Minimum remaining heroes?</label>
-        <input type="text", id="min-rems", name="min-rems", value="1"><br>
-        <label for="rems">Minimum players?</label>
-        <input type="text", id="min-players", name="min-players", value="1"><br><br>
+    <body class="page-body">
+        
+        <div class="inputs">
+            <div class="input-row">
+                <text class="input-label">Maximum remaining heroes in realm: </text>
+                <input class="input-field" type="text" id="maxrems" value="25">
+            </div>
+            <div class="input-row">
+                <text class="input-label">Minimum remaining heroes in realm: </text>
+                <input class="input-field" type="text" id="minrems" value="1">
+            </div>
+            <div class="input-row">
+                <text class="input-label">Maximum players in realm: </text>
+                <input class="input-field" type="text" id="maxplayers" value="65">
+            </div>
+            <div class="input-row">
+                <text class="input-label">Minimum players in realm: </text>
+                <input class="input-field" type="text" id="minplayers" value="1">
+            </div>
+        </div>
 
-        <button type="button" id="submit">Find realms</button>
+        <button id="find" class="find-realms-button">Find realms</button>
+
+        <div id="results">
+        </div>
 
         <script src="index.js"></script>
 
-        <div id="realms">
-        </div>
-
-   </body>	
-
+    </body>
+    
 </html>
